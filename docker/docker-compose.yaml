@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  postgres96:
+    image: postgres:9.6
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'bank321'
+      POSTGRES_DB: 'BankInfoHolder'
+    ports:
+      - "5432:5432"
+    container_name: Bank

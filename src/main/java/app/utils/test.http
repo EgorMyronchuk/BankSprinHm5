@@ -1,0 +1,52 @@
+### GET request to example server
+GET http://localhost:9000/customers
+
+###
+GET http://localhost:9000/customers
+Accept: application/json
+
+###
+
+POST http://localhost:9000/customers
+Content-Type: application/json
+
+{
+  "name": "SomeIa",
+  "email": "johewwqn@gmail.com",
+  "age": 90,
+  "password": "1234321212",
+  "phone": "+38054321607"
+}
+
+###
+
+PUT http://localhost:9000/customers/1
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "age": 12,
+  "password": "1234",
+  "phone": "+312231"
+}
+
+###
+
+DELETE http://localhost:9000/customers/3
+Accept: application/json
+
+###
+
+POST http://localhost:9000/customers/3/accounts?currency=USD
+
+###
+
+POST http://localhost:9000/account/deposit?cardNumber=41410000000001&amount=50
+
+###
+POST http://localhost:9000/account/withdraw?cardNumber=41410000000001&amount=50
+###
+POST http://localhost:9000/account/transfer?cardNumberFrom=41410000000001&cardNumberTo=41410000000002&amount=50
+
+###
